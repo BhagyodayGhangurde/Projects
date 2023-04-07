@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simple login form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome</h2>
+        <div class="logo">
+            <img src="apple logo.png" alt="">
+        </div>
+        <br><br><br>
+
+        <form action="" onsubmit="return demo()">
+            <input type="text" name="username" class="user" placeholder="Username" id="username" value=""><br>
+            <span id="massage"></span>
+            <br> <br><br>
+            <input type="password" name="pass" class="pass" placeholder="Password" id="pass" value=""><br>
+            <span id="massage2"></span>
+            <br> <br> <br>
+            <input type="submit" value="Login" class="button">
+            <br><br><br><br><br>
+            <p>Don't have account sign up now</p>
+
+        </form>
+        <script>
+                function demo(){
+                name=document.getElementById("username").value
+                password=document.getElementById("pass").value
+                if(name==""){
+                    document.getElementById("massage").innerHTML="**Username Should Not Empty"
+                    return false
+                }
+                if(password==""){
+                    document.getElementById("massage2").innerHTML="**Password Should Not Empty"
+                    return false
+                }
+                }
+        </script>
+    </div>
+</body>
+</html>
